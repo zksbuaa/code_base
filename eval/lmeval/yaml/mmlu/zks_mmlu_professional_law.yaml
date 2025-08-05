@@ -1,0 +1,4 @@
+"dataset_name": "professional_law"
+"description": "The following are multiple-choice questions on professional_law. Please select the correct answer.\n\n"
+"include": "_default_template_yaml"
+"task": "zks_mmlu_professional_law"

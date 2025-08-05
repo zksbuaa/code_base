@@ -1,0 +1,23 @@
+task: zks_winogrande
+dataset_path: /mnt/public/data/zks/benchmarks_for_lmeval/winogrande
+dataset_name: winogrande_xl
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+num_fewshot: 0
+doc_to_text: !function preprocess_winogrande.doc_to_text
+doc_to_target: !function preprocess_winogrande.doc_to_target
+doc_to_choice: !function preprocess_winogrande.doc_to_choice
+should_decontaminate: true
+doc_to_decontamination_query: sentence
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 2.0
+dataset_kwargs:
+  trust_remote_code: true

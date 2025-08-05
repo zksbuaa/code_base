@@ -1,0 +1,20 @@
+task: zks_clue_c3
+dataset_path: /mnt/public/data/zks/benchmarks_for_lmeval/clue
+dataset_name: c3
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+process_docs: !function utils.process_docs
+doc_to_text: "对话：{{context}}\n问题：{{question}}\n答案："
+target_delimiter: " "
+doc_to_choice: "{{choice}}"
+doc_to_target: "{{answer}}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 2.0

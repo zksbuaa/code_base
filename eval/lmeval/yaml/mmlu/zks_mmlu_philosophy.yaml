@@ -1,0 +1,4 @@
+"dataset_name": "philosophy"
+"description": "The following are multiple-choice questions on philosophy. Please select the correct answer.\n\n"
+"include": "_default_template_yaml"
+"task": "zks_mmlu_philosophy"

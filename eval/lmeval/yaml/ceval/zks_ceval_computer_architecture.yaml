@@ -1,0 +1,4 @@
+"dataset_name": "computer_architecture"
+"description": "以下是关于计算机组成的中文单项选择题，请选出其中的正确答案。\n\n"
+"include": "_default_zks_ceval_yaml"
+"task": "zks_ceval_computer_architecture"

@@ -1,0 +1,4 @@
+"dataset_name": "mao_zedong_thought"
+"description": "以下是关于毛泽东思想和中国特色社会主义理论体系概论的中文单项选择题，请选出其中的正确答案。\n\n"
+"include": "_default_zks_ceval_yaml"
+"task": "zks_ceval_mao_zedong_thought"

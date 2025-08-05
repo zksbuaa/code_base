@@ -1,0 +1,4 @@
+"dataset_name": "advanced_mathematics"
+"description": "以下是关于高等数学的中文单项选择题，请选出其中的正确答案。\n\n"
+"include": "_default_zks_ceval_yaml"
+"task": "zks_ceval_advanced_mathematics"

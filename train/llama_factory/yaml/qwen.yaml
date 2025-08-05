@@ -1,0 +1,46 @@
+### model
+model_name_or_path: /mnt/public/code/zks/tmp/loss_diff_step190700
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_config.json  # choices: [ds_z0_config.json, ds_z2_config.json, ds_z3_config.json]
+
+### dataset
+dataset:  Infinity-Instruct-3M # Infinity-Instruct_new,SYNTHETIC-1-SFT-Data_new # alpaca_zh_demo # SYNTHETIC-1-SFT-Data
+template: qwen
+cutoff_len: 16384
+# max_samples: 100000000
+overwrite_cache: true
+preprocessing_num_workers: 16
+# disable_shuffling: true
+# seed: 123
+# packing: false
+
+### output
+output_dir: /mnt/public/model/zks/sft_ckpt/full/0609_lossdiff_1
+logging_steps: 10
+save_steps: 2000
+plot_loss: true
+save_only_model: true
+overwrite_output_dir: true
+report_to: none  # 禁用 wandb
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 32
+learning_rate: 1.0e-6
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+max_grad_norm: 1.0
+
+## eval
+val_size: 0.001
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 1000

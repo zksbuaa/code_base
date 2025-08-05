@@ -1,0 +1,4 @@
+"dataset_name": "teacher_qualification"
+"description": "以下是关于教师资格的中文单项选择题，请选出其中的正确答案。\n\n"
+"include": "_default_zks_ceval_yaml"
+"task": "zks_ceval_teacher_qualification"

@@ -1,0 +1,4 @@
+"dataset_name": "fire_engineer"
+"description": "以下是关于注册消防工程师的中文单项选择题，请选出其中的正确答案。\n\n"
+"include": "_default_zks_ceval_yaml"
+"task": "zks_ceval_fire_engineer"
