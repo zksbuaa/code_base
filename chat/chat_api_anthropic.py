@@ -8,8 +8,8 @@ import concurrent.futures
 import requests
 from typing import List, Dict, Optional
 
-personal_base_url = "http://123.129.219.111:3000/v1/chat/completions"
-personal_api_key = "sk-JB7EmnGzZwhvKRIjAbMGLb4IIqVRsuucvd7EbtE5t6PoFMh6"
+personal_base_url = ""
+personal_api_key = ""
 
 max_try_num = 15
 max_thread_num = 8
