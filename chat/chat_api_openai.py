@@ -9,8 +9,8 @@ from openai import OpenAI
 from typing import Dict, Any
 
 MODEL_CFG: Dict[str, str] = {
-   'base_url' : "http://123.129.219.111:3000/v1",
-   'api_key' : "sk-J4OU0nswdAQEmN7y7pS9ytPedSvEC8NXCOhuBX5GIz3dXz3c",
+   'base_url' : "",
+   'api_key' : "",
    'gpt_model' : "gpt-4o"
 }
 
